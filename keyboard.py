@@ -4,8 +4,15 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 START_KEYBOARD = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('Github', GITHUB_URL),
-            InlineKeyboardButton('Developer', DEV_URL)   
+            InlineKeyboardButton("❔ How To Use Me ❔", callback_data="help"),
+                ],[
+                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
+                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
+                ],[
+                InlineKeyboardButton('🤖 Developer', url='https://t.me/shamilnelli'),
+                InlineKeyboardButton('🎧 Songs', url='https://t.me/mwksongs')
+                ],[
+                InlineKeyboardButton('📜 Source Code 📜', url='https://t.me/mwklinks/56'),
         ]
     ]
 )
