@@ -1,6 +1,5 @@
 from typing import Any
 from pymongo import MongoClient
-from telegram import user
 from config import AKI_MONGO_HOST
 
 my_client = MongoClient(host=AKI_MONGO_HOST)
