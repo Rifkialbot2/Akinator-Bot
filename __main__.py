@@ -7,7 +7,7 @@ from keyboard import AKI_LANG_BUTTON, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMO
 from telegram.constants import ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
 from config import BOT_TOKEN
-from database import (
+from getLead import (
     addUser, 
     getChildMode, 
     getCorrectGuess, 
