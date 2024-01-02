@@ -4,7 +4,7 @@ from akinator import Akinator
 from random import randint
 from pprint import pprint
 from keyboard import AKI_LANG_BUTTON, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD
-from telegram import Update, ParseMode
+from telegram.constants import ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
 from config import BOT_TOKEN
 from database import addUser, getChildMode, getCorrectGuess, getLanguage, getTotalGuess, getTotalQuestions, getUnfinishedGuess, getUser, getWrongGuess, totalUsers, updateChildMode, updateCorrectGuess, updateLanguage, updateTotalGuess, updateTotalQuestions, updateWrongGuess
