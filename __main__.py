@@ -1,13 +1,15 @@
-from os import cpu_count
-import akinator
+from distutils.command.config import LANG_EXT
+from os import cpu_count, terminal_size
 from akinator import Akinator
+from telegram import Update ,InputMediaPhoto
+from keyboard import AKI_LANG_BUTTON, AKI_LEADERBOARD_KEYBOARD, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD
 from random import randint
-from pprint import pprint
-from keyboard import AKI_LANG_BUTTON, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD
 from telegram.constants import ParseMode
-from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
+from telegram.ext import CommandHandler,Application 
+from telegram.ext import  CommandHandler, CallbackContext, CallbackQueryHandler
 from config import BOT_TOKEN
-from getLead import (
+import logging 
+from database import (
     addUser, 
     getChildMode, 
     getCorrectGuess, 
@@ -25,8 +27,7 @@ from getLead import (
     updateTotalQuestions, 
     updateWrongGuess)
 
-updateTotalQuestions, updateWrongGuess
-from strings import AKI_LANG_CODE, AKI_LANG_MSG, CHILDMODE_MSG, ME_MSG, START_MSG
+from strings import AKI_FIRST_QUESTION, AKI_LANG_CODE, AKI_LANG_MSG, CHILDMODE_MSG, ME_MSG, START_MSG
 import akinator
 
 
