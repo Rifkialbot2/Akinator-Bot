@@ -1,6 +1,6 @@
 from os import cpu_count
 import akinator
-from telegram.files.inputmedia import InputMediaPhoto
+from akinator import Akinator
 from random import randint
 from pprint import pprint
 from keyboard import AKI_LANG_BUTTON, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMODE_BUTTON, START_KEYBOARD
