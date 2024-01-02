@@ -7,7 +7,25 @@ from keyboard import AKI_LANG_BUTTON, AKI_PLAY_KEYBOARD, AKI_WIN_BUTTON, CHILDMO
 from telegram.constants import ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackContext, CallbackQueryHandler
 from config import BOT_TOKEN
-from database import addUser, getChildMode, getCorrectGuess, getLanguage, getTotalGuess, getTotalQuestions, getUnfinishedGuess, getUser, getWrongGuess, totalUsers, updateChildMode, updateCorrectGuess, updateLanguage, updateTotalGuess, updateTotalQuestions, updateWrongGuess
+from database import
+    addUser, 
+    getChildMode, 
+    getCorrectGuess, 
+    getLanguage, 
+    getLead, 
+    getTotalGuess, 
+    getTotalQuestions, 
+    getUnfinishedGuess, 
+    getUser, getWrongGuess, 
+    totalUsers, 
+    updateChildMode, 
+    updateCorrectGuess, 
+    updateLanguage, 
+    updateTotalGuess, 
+    updateTotalQuestions, 
+    updateWrongGuess)
+
+updateTotalQuestions, updateWrongGuess
 from strings import AKI_LANG_CODE, AKI_LANG_MSG, CHILDMODE_MSG, ME_MSG, START_MSG
 import akinator
 
