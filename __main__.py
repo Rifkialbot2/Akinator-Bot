@@ -191,10 +191,10 @@ def del_data(context:CallbackContext, user_id: int):
 def main():
     updater = Updater(token=BOT_TOKEN, user_sig_handler=del_data)
     dp = updater.dispatcher
-    dp.add_handler(CommandHandler('start', aki_start, run_async=True))
+    dp.add_handler(CommandHandler('aki', aki_start, run_async=True))
     dp.add_handler(CommandHandler('find', aki_find, run_async=True))
     dp.add_handler(CommandHandler('me', aki_me, run_async=True))
-    dp.add_handler(CommandHandler('play', aki_play_cmd_handler, run_async=True))
+    dp.add_handler(CommandHandler('akinator', aki_play_cmd_handler, run_async=True))
     dp.add_handler(CommandHandler('language', aki_lang, run_async=True))
     dp.add_handler(CommandHandler('childmode', aki_childmode, run_async=True))
 
